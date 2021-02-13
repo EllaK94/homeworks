@@ -12,7 +12,7 @@ ul {
     font-style: italic;
 }
 
-span {
+.two-words {
     text-decoration: line-through;
 }
 
