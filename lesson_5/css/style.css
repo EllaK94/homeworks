@@ -8,8 +8,12 @@ ul {
 }
 
 .introduction {
-    font-size: 10px;
+    font-size: 14px;
     font-style: italic;
+}
+
+span {
+    text-decoration: line-through;
 }
 
 .header-center {
