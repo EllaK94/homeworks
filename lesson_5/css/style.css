@@ -7,6 +7,11 @@ ul {
     text-align: center;
 }
 
+.introduction {
+    font-size: 10px;
+    font-style: italic;
+}
+
 .header-center {
     text-align: center;
 }
