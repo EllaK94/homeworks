@@ -2,6 +2,10 @@ body {
     background-color: cornsilk;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 .header-center {
     text-align: center;
 }
