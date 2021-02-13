@@ -1,10 +1,11 @@
-body { /* Добавила фон всей странице */
+body { /* Добавила фон всей странице и рамку с прозрачностью 50%*/
     background-color: cornsilk;
+    border: rgba(25, 25, 25, 0.3);
 }
 
 ul { /* Список глав */
     list-style-position: inside; /* Сцепила маркеры с текстом */
-    text-align: center; /* Выравняла по центру */
+    text-align: center; /* Выровняла по центру */
 }
 
 .introduction { /* Введение в книгу */
