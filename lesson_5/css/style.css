@@ -14,7 +14,7 @@ ul { /* Список глав */
     font-style: italic;
 }
 
-.two-words { /* Два зачеркнутых слова (класс) */
+.introduction span { /* Два зачеркнутых слова (не через класс) */
     text-decoration: line-through;
 }
 
@@ -35,6 +35,20 @@ h1 {
     font-weight: bold;
 }
 
+/* Сложное задание: закрепить оглавление справа */
+.menu {
+    width: 150px;
+    margin: 0;
+    list-style: none; /* Убирает маркеры у списка */
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+
+
+
+
 
 /* Решила для красоты отформатировать картинки */
 img {
@@ -43,5 +57,5 @@ img {
 
     background: rgb(255, 240, 240); /* Фон рамки изображений */
     padding: 20px; /* Толщина рамки для изображений */ 
-    border: 2px solid rgb(143, 129, 129); /* Параметры рамки */
+    border: 2px solid rgba(143, 129, 129, 0.548); /* Параметры рамки */
 }
