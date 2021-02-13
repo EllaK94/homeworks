@@ -1,18 +1,18 @@
-body {
+body { /* Добавила фон всей странице */
     background-color: cornsilk;
 }
 
-ul {
-    list-style-position: inside;
-    text-align: center;
+ul { /* Список глав */
+    list-style-position: inside; /* Сцепила маркеры с текстом */
+    text-align: center; /* Выравняла по центру */
 }
 
-.introduction {
+.introduction { /* Введение в книгу */
     font-size: 14px;
     font-style: italic;
 }
 
-.two-words {
+.two-words { /* Два зачеркнутых слова (класс) */
     text-decoration: line-through;
 }
 
@@ -21,13 +21,14 @@ h1 {
 }
 
 .header-center {
+/* Заголовки h2 по центру (через класс,  можно было через h2 просто?)*/
     text-align: center;
 }
 
-.note {
+.note { /* Заметки жирные */
     font-weight: bold;
 }
 
-.return {
+.return { /* "Вернуться в начало" жирное*/
     font-weight: bold;
 }
