@@ -40,7 +40,8 @@ body {
 }
 .price {
     display: block;
-    margin-bottom: 48px; /* Отступ снизу, от цены */
+    margin-bottom: 48px;
+    font-weight: bold; /* Отступ снизу, от цены */
 }
 .buttons {
     text-decoration: none;
@@ -50,4 +51,114 @@ body {
     color: #23bac1;
     border: 1px solid #23bac1;
     padding: 23px 74px;
+}
+
+
+/*  Усложненное задание 
+Секция с книгой - Истинная королева */
+
+/* * {
+box-sizing: border-box;
+}
+body {
+font-family: sans-serif;
+margin: 0;
+} */
+.header {
+    padding-top: 77px;
+    padding-bottom: 97px;
+}
+.main-container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-image {
+    width: 45%;
+    margin-left: 10px;
+}
+.main-text {
+    width: 50%;
+    color: #000000;
+    line-height: 1.2;
+    margin-right: 125px;
+}
+.books-title {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+}
+.books-subtitle {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.description {
+    max-width: 530px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: 38px;
+    margin-bottom: 48px;
+}
+.books-price {
+    font-size: 48px;
+/*     line-height: 27px; */
+    font-weight: 400;
+    color: #313131;
+    margin-bottom: 55px; /* !!!!!!СХЛОПНУЛИСЬ ОТСТУПЫ?? */
+}
+.btn {
+    text-decoration: none;
+    font-size: 24px;
+    /* line-height: 27px; */
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #f05a22;
+    border-radius: 5px;
+    padding: 22px 32px;
+}
+.btn-o {
+    margin-left: 40px;
+    color: #f05a22;
+    background-color: transparent;
+    border: 2px solid #f05a22;
+}
+
+/* Секция с преимуществами - Доставка и оплата */
+.features {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    background-color: #f2f2f2;
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.features-wrap {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.features-block-img {
+    min-height: 50px;
+    margin-bottom: 23px;
+}
+.features-block-text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.features-block {
+    width: 25%;
 }
