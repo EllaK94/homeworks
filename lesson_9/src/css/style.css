@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+}
+.body {
+    font-family: sans-serif;
+}
+.section {
+    padding-top: 70px;
+    padding-bottom: 97px;
+    text-align: center; /* выровнялись все элементы секции по середине, но вроде это нельзя юзать */
+}
+.section-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 81px;
+}
+.text {
+    font-family: "Tahoma";
+    color: #333333;
+    /* display: block; */ /* То же самое, что d-block в классах */
+}
+.features-img {
+    min-height: 80px;
+}
+.features-text {
+    margin-bottom: 20px;
+}
+.element {
+    order: -1; /* Четвертое преимущество стало первым */
+}
+/* .block-wrap {
+    margin-bottom: 20px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <section class="features section">
+<div class="container">
+  <h2 class="section-title text">
+    Почему нужно сделать это сейчас?
+  </h2>
+  <!-- /.title -->
+  <div class="block-wrap">
+
+  </div>
+  <!-- /.block-wrap -->
+
+  <div class="row">
+    <div class="block-wrap">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="features-img">
+          <img src="img/001-summer.png" alt="">
+        </div>
+        <!-- /.img-b -->
+        <p class="text">
+          Первое преимущество
+        </p>
+      </div>
+    </div>
+    <!-- /.block-wrap -->
+
+    <div class="block-wrap">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="features-img">
+          <img src="img/002-camping.png" alt="">
+        </div>
+        <p class="text">
+          Второе преимущество
+        </p>
+      </div>
+    </div>
+    <!-- /.block-wrap -->
+
+    <div class="block-wrap">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="features-img">
+          <img src="img/003-mountains.png" alt="">
+        </div>
+        <p class="text">
+          Третье преимущество
+        </p>
+      </div>
+    </div>
+    <!-- /.block-wrap -->
+
+    <div class="block-wrap">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="features-img">
+          <img src="img/004-boarding-pass.png" alt="">
+        </div>
+        <p class="text">
+          Четвертое преимущество
+        </p>
+      </div>
+    </div>
+    <!-- /.block-wrap -->
+    
+
+    <div class="block-wrap">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="features-img">
+          <img src="img/Forma-1.png" alt="">
+        </div>
+        <p class="text">
+          Пятое преимущество
+        </p>
+      </div>
+    </div>
+    <!-- /.block-wrap -->
+
+    <div class="block-wrap">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="features-img">
+          <img src="img/Forma-2.png" alt="">
+        </div>
+        <p class="text">
+          Шестое преимущество
+        </p>
+      </div>
+    </div>
+    <!-- /.block-wrap -->
+  </div>
+</div>
+</section>
+<!-- /.features --> */
