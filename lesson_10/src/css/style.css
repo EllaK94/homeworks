@@ -1,0 +1,107 @@
+body {
+    color: #32325f; /* Цвет текста для сайта */
+}
+img {
+    max-width: 100%; /* Чтобы картинка не прокручивалась вправо и не вываливалась из контейнера*/
+}
+a.brand:active, /* активная/посещенная ссылка */
+a.brand:hover,  /* при наведении */
+a.brand {
+  text-decoration: none;
+  color: #95989a;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+/*     display: block; */ /* То же, что и класс d-block в Бутстрапе */
+}
+.title {
+    font-size: 48px;
+    font-weight: 700;
+}
+.price {
+    font-size: 48px;
+    font-weight: 400;
+}
+.main {
+    margin-top: 100px;
+    /* Выравнивание текста и картинки по центру было через класс align-items-center у обертки - row */
+}
+.hero {
+    background-color: #f4f5f7;
+    padding-top: 70px;
+    padding-bottom: 190px;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.button {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 6px;
+    filter: drop-shadow(0px 3px 3.5px rgba(173,173,173,0.16));
+    padding: 25px 35px;
+}
+.button-success {
+    background-color: #2dce89;
+    margin-right: 30px;
+}
+.button-primary {
+    background-color: #5e72e4;
+}
+.social a {
+    margin-left: 20px;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.people {
+    background-color: #f4f5f7;
+}
+.about-block {
+    margin-top: 100px;
+}
+.people-block {
+    margin-top: 100px;
+}
+
+.footer {
+    background-color: #32325f;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.footer-title {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footer-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+a.footer-text:active, /* активная/посещенная ссылка */
+a.footer-text:hover,  /* при наведении */
+a.footer-text {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/* классы для кнопок и не только:
+btn-lg - увеличенный размер кнопки 
+btn-success и btn-primary и т.д. - цвета кнопок 
+mt-3 или mb-4 - отступ margin-top 30px или mbottom 40px*/
