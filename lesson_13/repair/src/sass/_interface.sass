@@ -1,0 +1,26 @@
+$desktop-width: 1200px 
+$tablet-width: 768px 
+$mobile-width: 320px
+
+body 
+	font-family: sans-serif
+img 
+	max-width: 100%
+.container 
+	width: 1170px
+	padding: auto
+@media (max-width: $tablet-width)
+	.container 
+		width: 640px
+		padding: 0 50px
+@media (max-width: $mobile-width)
+	.container 
+		width: 280px 
+		padding: 0 20px
+/** 		max-width: 580px
+		width: 95% - Ломается верстка! Где косяк?????**/
+.button 
+	border-radius: 10px
+	background-color: $main-color
+	border: none
+	padding: 18px 30px
