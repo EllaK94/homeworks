@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Cyrl Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: local("../fonts/MuseoSansCyrl"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Museo Sans Cyrl Light', sans-serif;
+  font-weight: 300;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+}
+
+.navbar {
+  padding: 9px 0;
+}
+
+.navbar__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.navbar__address {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.navbar__phone {
+  display: inline-block;
+  /** Без inline-block не включается **/
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  /** +bold - миксин для шрифта **/
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+}
+
+.navbar__button {
+  padding: 18px 31px;
+  margin-left: 33px;
+  font-size: 13px;
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+}
+
+/** Медиа-запросы к отдельным блокам секции можно  прописать внизу (можно было вверху как свойство) как: **/
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__button {
+    font-size: 10px;
+    padding: 15px 26px;
+    margin-left: 50px;
+  }
+  .navbar__logo {
+    width: 91px;
+  }
+}
+
+/** Компилятор тупит - F1 > Convert Indentation to Tab **/
+.hero {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-text {
+  /** flex-basis - как ширина блока **/
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-right: 120px;
+  margin: 0;
+  margin-bottom: 92px;
+}
+
+.hero-text__title {
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+
+.hero-text__subtitle {
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  /** line-height: 65px **/
+  margin-bottom: 68px;
+  display: inline-block;
+  /** inline-block - чтобы отступ появился **/
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero-list__text {
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 300px;
+}
+
+.hero-list__image {
+  /** flex-basis - вместо ширины? **/
+  -ms-flex-preferred-size: 37px;
+      flex-basis: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .hero-text {
+    padding-right: 10px;
+  }
+  .hero-text__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .hero-img {
+    width: 55%;
+  }
+  .hero-list {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px 0;
+  }
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-text {
+    margin-bottom: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0;
+  }
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .hero-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
