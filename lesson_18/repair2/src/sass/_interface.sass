@@ -1,0 +1,42 @@
+* 
+	box-sizing: border-box
+body 
+	+regular
+	color: $text-color
+img 
+	max-width: 100%
+.container 
+	width: 1170px
+	margin: auto
+	@media (max-width: 1200px)
+		width: 95% 
+	@media (max-width: 768px)
+		width: 90% 
+	@media (max-width: 320px)
+		width: 90%
+.section 
+	padding: 90px 0
+	@media (max-width: 1200px)
+		padding: 40px 0
+.button 
+	+bold
+	border-radius: 10px
+	background-color: $main-color
+	border: none
+	&:hover 
+		background-color: lighten($main-color, 10%)
+		cursor: pointer
+	&:focus
+		outline: none
+.input 
+	font-size: 15px
+	border-radius: 10px
+	border: 1px solid $input-border
+	padding: 20px 26px
+	&:focus  
+		outline: none
+		border: 1px solid $input-border_focus
+		/** Обводка input при нажатии **/
+.back-to-top 
+	position: fixed
+	
